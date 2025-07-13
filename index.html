@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvio Correia Portfolio</title>
+    <!-- Link para o seu ficheiro CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minimal.css">
+    <!-- Font Awesome para ícones -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- ScrollReveal.js para animações de scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="background-verde" id="inicio">
+        <header class="l-header"> <!-- Adicionada classe l-header para o menu fixo -->
+            <div class="container">
+                <nav class="nav"> <!-- Adicionada classe nav para o menu mobile -->
+                    <div class="logo nav__logo">
+  <a href="#inicio" class="logo-text">
+    Elvio Correia<span class="logo-ponto">.</span>
+  </a>
+</div>
+                    <!-- Botão de toggle para o menu mobile -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="ul nav__menu" id="nav-menu"> <!-- Adicionadas classes nav__menu -->
+                        <li class="nav__item"><a href="#inicio" class="nav__link">Início</a></li>
+                        <li class="nav__item"><a href="#sobre" class="nav__link">Sobre</a></li>
+                        <li class="nav__item"><a href="#projetos" class="nav__link">Projetos</a></li>
+                        <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container home"> <!-- Adicionada classe home para animações -->
+                <div class="main-text home__data"> <!-- Adicionada classe home__data para animação de texto -->
+                    <h1>Olá! Eu Sou o Elvio Correia</h1>  
+                    <h2>Veja o meu Portfólio</h2>        
+                    <a href="#projetos"><button class="btn-gradiente button button-pulsante">Ver Projetos</button></a> <!-- Adicionada classe button -->
+                    <img src="img/verificado.png" alt="Verificado">
+                </div> 
+
+                <div class="main-img"> <!-- Adicionada classe home__img para animação de imagem -->
+                    <img src="img/Elvio-Correia1.jpg" alt="Foto de Perfil">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Adicionadas classes section e outras para animações de scroll -->
+    <section class="sobre-container section about__container" id="sobre">
+        <div class="sobre-conteudo">
+            <div class="sobre-texto">
+                <h1 class="about__subtitle"><i class="fas fa-user"></i> Sobre Mim</h1> <!-- Adicionadas classes section-title e about__subtitle -->
+                <p class="about__text">Olá! Chamo-me <strong>Elvio Correia</strong> e sou um apaixonado pelo universo digital e pela comunicação visual. Nasci em Guimarães, em 1990, e vivi lá até aos 30 anos.</p>
+                <p class="about__text">Atualmente, resido no Porto, onde decidi seguir a minha paixão pela tecnologia, dedicando-me à área de <strong>Multimédia</strong>. Acredito que a multimédia tem um poder imenso para contar histórias, transmitir emoções e revolucionar a forma como interagimos com o mundo.</p>
+                <p class="about__text">Recentemente, concluí um Curso Técnico de Multimédia de Nível 4, onde adquiri competências em diversas áreas, incluindo:</p>
+                <ul class="skills__text"> <!-- Adicionada classe skills__text -->
+                    <li>-Design Gráfico</li>
+                    <li>-Edição de Imagem e Vídeo</li>
+                    <li>-Edição de Som</li>
+                    <li>-Linguagem de Programação</li>
+                </ul><br>
+                <p class="skills__text">Ao longo do curso, trabalhei com programas como:</p>
+                <ul class="skills__text"> <!-- Adicionada classe skills__text -->
+                    <li>-Figma <p>-Lunacy <br>-GIMP <br>-Stop Motion <br>-CapCut <br>-Inkscape <br>-Visual Studio Code <br>-VSDC <br>-Audacity <br>-Scratch</li>
+                    <li> Soft Skills
+                    <br>• Criatividade
+                    <br>• Adaptação
+                    <br>• Visão Narrativa
+                    <br>• Motivação
+                    <br>• Trabalho em Equipa
+                    <br>• Resolução de Problemas</li><br>
+                   
+                </ul>
+                <p class="about__text">Estou entusiasmado para aplicar os meus conhecimentos e continuar a desenvolver as minhas capacidades neste campo dinâmico e inovador.</p><br>
+            </div>
+
+            <div class="sobre-card skills__container"> <!-- Adicionada classe skills__container -->
+                <h2 class="skills__subtitle"><i class="fas fa-graduation-cap"></i> Competências</h2> <!-- Adicionada classe skills__subtitle -->
+                <ul>
+                    <li class="skills__data">Design Gráfico</li> <!-- Adicionada classe skills__data -->
+                    <li class="skills__data">Edição de Imagem e Vídeo</li>
+                    <li class="skills__data">Edição de Som</li>
+                    <li class="skills__data">Linguagem de Programação</li>
+                    <li class="skills__data">Instalação e Montagem de Hardware e Software</li>
+                </ul>
+            </div>
+
+            <div class="sobre-card skills__container"> <!-- Adicionada classe skills__container -->
+                <h2 class="skills__subtitle"><i class="fas fa-tools"></i> Ferramentas</h2> <!-- Adicionada classe skills__subtitle -->
+                <ul class="ferramentas-grid">
+                    <li class="skills__data">Figma</li> <!-- Adicionada classe skills__data -->
+                    <li class="skills__data">Lunacy</li>
+                    <li class="skills__data">GIMP</li>
+                    <li class="skills__data">Stop Motion</li>
+                    <li class="skills__data">CapCut</li>
+                    <li class="skills__data">Audacity</li>
+                    <li class="skills__data">Inkscape</li>
+                    <li class="skills__data">VSDC Video Editor</li>
+                    <li class="skills__data">Visual Studio Code</li>
+                    <li class="skills__data">Scratch</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adicionadas classes section e work__container para animações -->
+    <section class="projetos-container section" id="projetos">
+        <div class="projetos-conteudo work__container">
+            <h2><i class="fas fa-folder-open"></i> Projetos</h2> <!-- Adicionada classe section-title -->
+            <div class="projetos-grid">
+              <div class="projeto-item work__img">
+    <i class="fas fa-video"></i>
+    <h3>Projeto de Vídeo</h3>
+
+    <!-- Vídeo 1 -->
+    <div class="video-wrapper">
+        <video controls>
+            <source src="videos/pos-producao-elvio.mp4" type="video/mp4">
+            O seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+    <p class="video-descricao">
+        1. Demonstração de técnicas aplicadas para uma criação de vídeo Stop Motion através da aplicação Stop Motion para telemóvel, e edição de vídeo, áudio e efeitos através do software CapCut versão Desktop.
+    </p>
+
+    <!-- Vídeo 2 -->
+    <div class="video-wrapper">
+        <video controls>
+            <source src="videos/elvio-correia-ufcd-9965.mp4" type="video/mp4">
+            O seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+    <p class="video-descricao">
+        2. Deminstração de técnicas aplicadas para uma Criação de um documentário sobre gatos estilo notícia com edição de imagem, som, texto e efeitos visuais realizado no software Capcut Desktop.
+    </p>
+    
+</div>
+</div>
+</div>
+<br><br>
+                <div class="projeto-item work__img">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Website Pessoal</h3>
+                    <p>Desenvolvimento deste portfólio com HTML, CSS, JavaScript e design responsivo.</p>
+                </div>
+                <div class="projeto-item work__img">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design Gráfico</h3>
+                    <!-- Vídeo 1 -->
+    <div class="video-wrapper2">
+        <video controls>
+            <source src="videos/Mupi Edp (2).mp4" type="video/mp4">
+            O seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+    <p class="video-descricao2">
+        1. Demonstração de técnicas aplicadas para criação de um Mupi através da aplicação Figma para realizar o design, e edição de vídeo através do software CapCut versão Desktop.
+    </p>
+        <div class="imagem-projeto-wrapper">
+        <img src="img/Frame 1.png" alt="Exemplo de Design Gráfico" class="imagem-projeto">
+    </div>
+    <p class="imagem-descricao">
+        2. Aqui está um exemplo do meu trabalho em design gráfico, criando WebBanner com elementos visuais impactantes.
+    </p>
+
+        </p>
+        <div class="imagem-projeto-wrapper">
+        <img src="img/Frame 2.png" alt="Exemplo de Design Gráfico" class="imagem-projeto">
+    </div>
+    <p class="imagem-descricao">
+        3. Outro exemplo do meu trabalho em design gráfico, criando um WebBanner com elementos visuais impactantes.
+    </p>
+
+            </p>
+        <div class="imagem-projeto-wrapper">
+        <img src="img/Frame 3.png" alt="Exemplo de Design Gráfico" class="imagem-projeto">
+    </div>
+    <p class="imagem-descricao">
+        4. Outro exemplo do meu trabalho em design gráfico, criando um Banner para Viagens com elementos visuais impactantes.
+    </p>
+                </p>
+        <div class="imagem-projeto-wrapper">
+        <img src="img/Moodboards.png" alt="Exemplo de Design Gráfico" class="imagem-projeto">
+    </div>
+    <p class="imagem-descricao">
+        5. Outro exemplo do meu trabalho em design gráfico, criando Moodboards para uma loja de animais novamente com elementos visuais impactantes.
+    </p>
+
+                </p>
+        <div class="imagem-projeto-wrapper">
+        <img src="img/App Telemovel.png" alt="Exemplo de Design Gráfico" class="imagem-projeto">
+    </div>
+    <p class="imagem-descricao">
+        6. Outro exemplo do meu trabalho em design gráfico, Mera demonstração de tela inicial criada no figma para um aplicativo sobre Saude Mental com base nas Heuristicas de Nielson para um visual limpo e impactante.
+    </p>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adicionadas classes section e contact__container para animações -->
+    <section class="contacto-container section" id="contacto" style="min-height: 60vh; padding-top: 80px; padding-bottom: 80px;">
+        <div class="contacto-conteudo contact__container">
+            <h2><i class="fas fa-envelope"></i> Contacto</h2> <!-- Adicionada classe section-title -->
+            <p class="contact__input">Email: <a href="mailto:elvio_fcp_96@hotmail.com">elvio_fcp_96@hotmail.com</a></p> <!-- Adicionada classe contact__input -->
+            <p class="contact__input">Telefone: <a href="tel:+351934891988">+351 934 891 988</a></p> <!-- Adicionada classe contact__input -->
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/elviofcp96/" target="_blank" class="home__social-icon"><i class="fab fa-instagram"></i></a> <!-- Adicionada classe home__social-icon -->
+                <a href="https://www.facebook.com/elvio.correia.58" target="_blank" class="home__social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/elvio-correia-953ab3166" target="_blank" class="home__social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Link para o seu ficheiro JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
