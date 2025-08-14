@@ -876,9 +876,26 @@ section:nth-child(odd) .animate.scroll,
     .header {
         background: var(--bg-color);
     }
-
+    
+    /* Ajuste de espaçamento no herói para mobile */
+    .home-content {
+        margin-top: 2.4rem; /* Empurra o título "Elvio Correia" e restantes elementos um pouco para baixo */
+    }
+    
     #menu-icon {
         display: block;
+        color: var(--main-color);
+        background: transparent;
+        border: .2rem solid var(--main-color);
+        border-radius: .6rem;
+        padding: .2rem .6rem;
+        line-height: 1;
+    }
+
+    /* Melhor contraste e acessibilidade no ícone do menu em mobile */
+    #menu-icon:focus-visible {
+        outline: 2px solid var(--main-color);
+        outline-offset: 2px;
     }
 
     .navbar {
