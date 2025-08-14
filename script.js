@@ -1,12 +1,10 @@
 // toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
-
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
-
 // scroll sections
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -18,7 +16,6 @@ navLinks.forEach(link => {
         link.classList.add('active');
     });
 });
-
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -40,7 +37,6 @@ window.onscroll = () => {
             sec.classList.remove('show-animate');
         }
     });
-
     // sticky navbar
     let header = document.querySelector('header');
 
@@ -62,7 +58,6 @@ window.onscroll = () => {
         if (contactLink) contactLink.classList.add('active');
     }
 }
-
 // ================== Modal Functionality ==================
 document.addEventListener('DOMContentLoaded', () => {
     const projectBoxes = document.querySelectorAll('.project-box');
@@ -226,7 +221,6 @@ document.addEventListener('DOMContentLoaded', () => {
             mediaType: 'image'
         }
     };
-
     projectBoxes.forEach(box => {
         box.addEventListener('click', () => {
             const projectId = box.getAttribute('data-project-id');
@@ -252,18 +246,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     modalVideo.style.display = 'block';
                     modalVideo.play();
                 }
-
                 modal.style.display = 'flex';
             }
         });
     });
-
     closeModalBtn.addEventListener('click', () => {
         modal.style.display = 'none';
         modalVideo.pause();
         modalVideo.currentTime = 0;
     });
-
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
             modal.style.display = 'none';
