@@ -876,10 +876,12 @@ section:nth-child(odd) .animate.scroll,
     .header {
         background: var(--bg-color);
     }
-    
+        .home { 
+        padding: 8rem 4% 0; /* Espaço superior extra para evitar ficar escondido sob o header fixo */
+    }
     /* Ajuste de espaçamento no herói para mobile */
     .home-content {
-        margin-top: 2.4rem; /* Empurra o título "Elvio Correia" e restantes elementos um pouco para baixo */
+        margin-top: 0; /* Evita margem extra, o espaçamento é feito pelo padding do .home */
     }
     
     #menu-icon {
