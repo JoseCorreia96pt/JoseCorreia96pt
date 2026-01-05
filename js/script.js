@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'videohotel.mp4',
         'videospa.mp4',
         'redessociais3 video.mp4',
+        'redessociais4video.mp4',
     ];
 
     const imageFiles = [
@@ -208,6 +209,17 @@ document.addEventListener('DOMContentLoaded', () => {
         'redessociais3 (7).png',
         'redessociais3 (8).png',
     ];
+    const special4Main = 'joiaspost (1).png';
+    const special4Gallery = [
+    'joiaspost (1).png',
+    'joiaspost (2).png',
+    'joiaspost (3).png',
+    'joiaspost (4).png',
+    'joiaspost (5).png',
+    'joiaspost (6).png',
+    'joiaspost (7).png',
+    'joiaspost (8).png',
+];
 
     const inSet = new Set([special1Main, ...special1Gallery, special2Main, ...special2Gallery, special3Main, ...special3Gallery]);
 
@@ -222,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
         box.dataset.src = `assets/images/${mainFile}`;
         box.dataset.title = title;
         box.dataset.description = `Imagem de projeto: ${title}`;
-        const galleryPaths = [mainFile, ...galleryFiles].map(f => `assets/images/${f}`);
+        const galleryPaths = [`assets/images/${mainFile}`,...galleryFiles.map(f => `assets/images/${f}`),'assets/videos/redessociais4video.mp4'];
         box.dataset.gallery = JSON.stringify(galleryPaths);
 
         // imagem principal estendida (sem crop)
@@ -259,13 +271,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const specialCard1 = createSpecialCard(special1Main, special1Gallery, 'Redessociais 2');
     const specialCard2 = createSpecialCard(special2Main, special2Gallery, 'Redessociais 1');
     const specialCard3 = createSpecialCard(special3Main, special3Gallery, 'Redessociais 3');
+    const specialCard4 = createSpecialCard(special4Main, special4Gallery, 'Joias – Redes Sociais');
     // marcar como especiais nos três primeiros
     specialCard1.dataset.special = 'true';
     specialCard2.dataset.special = 'true';
     specialCard3.dataset.special = 'true';
+    specialCard4.dataset.special = 'true';
     specialFrag.appendChild(specialCard1);
     specialFrag.appendChild(specialCard2);
     specialFrag.appendChild(specialCard3);
+    specialFrag.appendChild(specialCard4);
 
     // ============ Lista automática restante (exclui os ficheiros dos grupos especiais) ============
     const items = [
